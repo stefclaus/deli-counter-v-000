@@ -6,7 +6,7 @@ def line(katz_deli)
   if katz_deli.count > 0 
     katz_deli.each_with_index do |name, index|
       line_number = index + 1
-      line_order =  "."#{line_number} #{name}
+      line_order =  "#{line_number}. #{name}"
       new_array << line_order
     end #ends iteration 
     puts "The line is currently:" new_array
