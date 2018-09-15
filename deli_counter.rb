@@ -16,7 +16,10 @@ def line(katz_deli)
 end #ends the function 
 
 def take_a_number(katz_deli, name)
-  puts 
+  order = []
+  line_number = index + 1
+  order << name 
+  puts "Welcome  #{name}. You are #{line_number} in line."
 end 
 
 def now_serving(katz_deli)
