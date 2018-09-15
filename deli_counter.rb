@@ -16,10 +16,9 @@ def line(katz_deli)
 end #ends the function 
 
 def take_a_number(katz_deli, name)
-  order = []
-  line_number = index + 1
-  order << name 
-  puts "Welcome  #{name}. You are #{line_number} in line."
+  line_number = katz_deli.count + 1
+  katz_deli << name 
+  puts "Welcome, #{name}. You are number #{line_number} in line."
 end 
 
 def now_serving(katz_deli)
