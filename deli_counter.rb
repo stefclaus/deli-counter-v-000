@@ -2,18 +2,18 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli.count > 0 
+  if katz_deli.count > 0
+    order = []
     katz_deli.each_with_index do |name, index|
     line_number = index + 1
     line_order =  "#{line_number}. #{name}"
-    puts "The line is currently: #{line_order}" 
+    order << line_order
     end #ends iteration 
+    puts "The line is currently: #{order.join(" ")}"
   else 
     puts "The line is currently empty."
   end #ends the if 
 end #ends the function 
-
-
 
 def take_a_number(katz_deli, name)
   puts 
