@@ -8,8 +8,8 @@ def line(katz_deli)
     line_number = index + 1
     line_order =  "#{line_number}. #{name}"
     order << line_order
-    puts "The line is currently: #{order.join(" ")}"
     end #ends iteration
+    puts "The line is currently: #{order.join(" ")}"
   else
     puts "The line is currently empty."
   end #ends the if
